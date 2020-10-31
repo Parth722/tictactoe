@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>TicTacToe</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tic-Tac-Toe</h1>
+            <hr>
+        </header>
+        <div id='menu'>
+            <div class="name-input">
+                <label for="player1">Player-1 (O):</label>
+                <input id='player1' type="text" name="player1">
+            </div>
+            <div class="name-input">
+                <label for="player2">Player-2 (X):</label>
+                <input id='player2' type="text" name="player2">
+            </div> 
+            <center>
+                <input type="button" id='play' value="PLAY">
+            </center>
+        </div>
+        <br>
+        <div id="board">
+            <form action="" class="gameboard hidden">
+                <div class="row1">
+                    <input type="button" id="box1" onclick="makeMove(this.id)">
+                    <input type="button" id="box2" onclick="makeMove(this.id)">
+                    <input type="button" id="box3" onclick="makeMove(this.id)">
+                </div>
+                <div class="row2">
+                    <input type="button" id="box4" onclick="makeMove(this.id)">
+                    <input type="button" id="box5" onclick="makeMove(this.id)">
+                    <input type="button" id="box6" onclick="makeMove(this.id)">
+                </div>
+                <div class="row3">
+                    <input type="button" id="box7" onclick="makeMove(this.id)">
+                    <input type="button" id="box8" onclick="makeMove(this.id)">
+                    <input type="button" id="box9" onclick="makeMove(this.id)">
+                </div>
+            </form>
+        </div>
+        <div class="winner hidden">
+            <p class="winner_text">
+            </p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
